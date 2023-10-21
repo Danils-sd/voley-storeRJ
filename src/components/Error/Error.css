@@ -1,0 +1,14 @@
+@import url('https://fonts.cdnfonts.com/css/roboto');
+.bacError{
+    width: 100vw;
+    height: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.errorStr{
+    font-family: Roboto;
+    font-size: 8vw;
+    color:#1479EA;
+}

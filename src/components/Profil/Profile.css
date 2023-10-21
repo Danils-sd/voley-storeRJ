@@ -1,0 +1,373 @@
+.profilCard{
+    width: 100vw;
+    /* height: 200vw; */
+}
+.nonTov{
+    margin-left: 23vw;
+    font-family: Roboto;
+    font-size: 3vw;
+    width: 25vw;
+}
+
+.assProfile{
+    top:0;
+    width: 30vw;
+    /* height: 100vh; */
+    border-right: 0.1vw solid;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.profData{
+    width: 29vw;
+    margin-top: 1vw;
+    margin-left: 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    font-family: Roboto;
+}
+
+.profLogin{
+    font-size: 3vw;
+    border-bottom: 0.1vw solid;
+}
+
+.BtnPay {
+    margin-top: 2vw;
+    width: 30vw;
+    height: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(15, 15, 15);
+    border: none;
+    color: #1479EA;
+    font-weight: 600;
+    gap: 0.8vw;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.103);
+    position: relative;
+    overflow: hidden;
+    transition-duration: .3s;
+    font-size: 2vw;
+    
+  }
+  
+  .svgIconPay {
+    width: 2vw;
+  }
+  
+  .svgIconPay path {
+    fill: #1479EA;
+  }
+  
+  .BtnPay::before {
+    width: 30vw;
+    height: 13vw;
+    position: absolute;
+    content: "";
+    background-color: #1479EA;
+    border-radius: 50%;
+    left: -100%;
+    top: 0;
+    transition-duration: .3s;
+    mix-blend-mode: difference;
+  }
+  
+  .BtnPay:hover::before {
+    transition-duration: .3s;
+    transform: translate(100%,-50%);
+    border-radius: 0;
+  }
+  
+  .BtnPay:active {
+    transform: translate(5px,5px);
+    transition-duration: .3s;
+  }
+
+.setTovProf{
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  border-bottom: 0.1vw solid;
+}
+.sectTovProf{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 30vw;
+  font-size: 1.4vw;
+  font-family: Roboto;
+
+}
+
+.tovItog{
+  font-size: 1.4vw;
+  font-family: Roboto;
+}
+.BtnProf {
+
+    margin-top: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 4.5vw;
+    height: 4.5vw;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition-duration: .3s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+    background-color: rgb(255, 65, 65);
+  }
+  
+  /* plus sign */
+  .signProf {
+    width: 100%;
+    transition-duration: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .signProf svg {
+    width: 1.3vw;
+  }
+  
+  .signProf svg path {
+    fill: white;
+  }
+  /* text */
+  .textProf {
+    position: absolute;
+    right: 0%;
+    width: 0%;
+    opacity: 0;
+    color: white;
+    font-size: 1.2vw;
+    font-weight: 600;
+    transition-duration: .3s;
+  }
+  /* hover effect on button width */
+  .BtnProf:hover {
+    
+    width: 12.5vw;
+    border-radius: 4vw;
+    transition-duration: .3s;
+  }
+  
+  .BtnProf:hover .signProf {
+    width: 30%;
+    transition-duration: .3s;
+    padding-left: 2vw;
+  }
+  /* hover effect button's text */
+  .BtnProf:hover .textProf {
+    opacity: 1;
+    width: 70%;
+    transition-duration: .3s;
+    padding-right: 1vw;
+  }
+  /* button click effect*/
+  .BtnProf:active {
+    transform: translate(2px ,2px);
+  }
+
+  .korz{
+    /* border-left: 0.1vw solid; */
+    margin-left: 30vw;
+    width: 70vw;
+    /* height: 200vw; */
+    display: grid;
+    grid-template-columns: repeat(2, 0.3fr);
+    grid-template-rows: repeat(2, 0fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+@media screen and (max-width: 1023px){
+  .assProfile{
+    top:0;
+    width: 50vw;
+    /* height: 100vh; */
+    border-right: 0.1vw solid;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profData{
+  width: 50vw;
+  margin-top: 2vw;
+  margin-left: 1vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  font-family: Roboto;
+}
+.nonTov{
+  margin-left: 5vw;
+  font-family: Roboto;
+  font-size: 3vw;
+  width: 25vw;
+}
+
+.setTovProf{
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  border-bottom: 0.1vw solid;
+}
+.sectTovProf{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 50vw;
+  font-size: 2.4vw;
+  font-family: Roboto;
+
+}
+.tovItog{
+  font-size: 3.4vw;
+  font-family: Roboto;
+}
+.BtnPay {
+  margin-top: 1vw;
+  width: 50vw;
+  height: 9vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(15, 15, 15);
+  border: none;
+  color: #1479EA;
+  font-weight: 600;
+  gap: 0.8vw;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.103);
+  position: relative;
+  overflow: hidden;
+  transition-duration: .3s;
+  font-size: 4vw;
+  
+}
+
+.svgIconPay {
+  width: 4vw;
+}
+
+.svgIconPay path {
+  fill: #1479EA;
+}
+
+.BtnPay::before {
+  width: 50vw;
+  height: 18vw;
+  position: absolute;
+  content: "";
+  background-color: #1479EA;
+  border-radius: 50%;
+  left: -100%;
+  top: 0;
+  transition-duration: .3s;
+  mix-blend-mode: difference;
+}
+
+.BtnPay:hover::before {
+  transition-duration: .3s;
+  transform: translate(100%,-50%);
+  border-radius: 0;
+}
+
+.BtnPay:active {
+  transform: translate(0.1vw,0.1vw);
+  transition-duration: .3s;
+}
+
+.BtnProf {
+
+  margin-top: 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 8.5vw;
+  height: 8.5vw;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition-duration: .3s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+  background-color: rgb(255, 65, 65);
+}
+
+/* plus sign */
+.signProf {
+  width: 100%;
+  transition-duration: .3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signProf svg {
+  width: 3.3vw;
+}
+
+.signProf svg path {
+  fill: white;
+}
+/* text */
+.textProf {
+  position: absolute;
+  right: 0%;
+  width: 0%;
+  opacity: 0;
+  color: white;
+  font-size: 2.9vw;
+  font-weight: 600;
+  transition-duration: .3s;
+}
+/* hover effect on button width */
+.BtnProf:hover {
+  
+  width: 30.5vw;
+  border-radius: 4vw;
+  transition-duration: .3s;
+}
+
+.BtnProf:hover .signProf {
+  width: 30%;
+  transition-duration: .3s;
+  padding-left: 2vw;
+}
+/* hover effect button's text */
+.BtnProf:hover .textProf {
+  opacity: 1;
+  width: 70%;
+  transition-duration: .3s;
+  padding-right: 1vw;
+}
+/* button click effect*/
+.BtnProf:active {
+  transform: translate(2px ,2px);
+}
+  .korz{
+    margin-left: 60vw;
+    width: 50vw;
+    /* height: 200vw; */
+    display: grid;
+    grid-template-columns: repeat(1, 0.3fr);
+    grid-template-rows: repeat(2, 0fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+}

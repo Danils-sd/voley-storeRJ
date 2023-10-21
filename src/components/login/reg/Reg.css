@@ -1,0 +1,295 @@
+@import url('https://fonts.cdnfonts.com/css/roboto');
+
+.bacReg{
+    background-color: #ffcaa6;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-family: Roboto;
+    border: 1px #000 
+}
+
+.form{
+
+    width: 34vw;
+    height: 44vw;
+    background-color: #1a1a1a;
+    border-radius: 2vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0.3vw 0.3vw 1vw rgba(0,0,0,1),
+    -0.1vw -0.1vw  0.6vw  rgba(255, 255, 255, 0.5);
+}
+
+.topText{
+    margin-top: 2vw;
+    font-size: 2.1vw;
+}
+
+.containerReg {
+    margin-top: 3vw;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vw;
+    position: relative;
+    color: white;
+  }
+  
+  .containerReg .labelReg {
+    font-size: 1.6vw;
+    padding-left: 0.9vw;
+    position: absolute;
+    top: 1.3vw;
+    transition: 0.3s;
+    pointer-events: none;
+  }
+  
+  .inputReg {
+    width: 24vw;
+    height: 4.8vw;
+    border: none;
+    outline: none;
+    padding-left: 0.8vw;
+    border-radius: 0.8vw;
+    color: #fff;
+    font-size: 2.2vw;
+    background-color: transparent;
+    box-shadow: 0.3vw 0.3vw 1vw rgba(0,0,0,1),
+    -0.1vw -0.1vw 0.6vw rgba(255, 255, 255, 0.4);
+  }
+  
+  .inputReg:focus {
+    border: 2px solid transparent;
+    color: #fff;
+    box-shadow: 0.3vw 0.3vw 1vw rgba(0,0,0,1),
+    -0.1vw -0.1vw 0.6vw rgba(255, 255, 255, 0.4),
+    inset 0.3vw 0.3vw 1vw rgba(0,0,0,1),
+    inset -0.1vw -0.1vw 0.6vw rgba(255, 255, 255, 0.4);
+  }
+  
+  .inputReg:valid ~ .labelReg,
+  .inputReg:focus ~ .labelReg {
+    transition: 0.3s;
+    padding-left: 0.2vw;
+    transform: translateY(-3vw);
+  }
+  
+  .containerReg .inputReg:valid,
+  .containerReg .inputReg:focus {
+    box-shadow: 0.3vw 0.3vw 1vw rgba(0,0,0,1),
+    -0.1vw -0.1vw 0.6vw rgba(255, 255, 255, 0.4),
+    inset 0.3vw 0.3vw 1vw rgba(0,0,0,1),
+    inset -0.1vw -0.1vw 0.6vw rgba(255, 255, 255, 0.4);
+  }
+
+  .registButton {
+    margin-top: 2vw;
+    width: 24vw;
+    position: relative;
+    height: 5vw;
+    border: 0.2vw ridge #ffcaa6;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    transition: 1s;
+    border-radius: 1.3vw;
+    font-size: 2.5vw;
+  }
+  
+  .registButton::after {
+    content: "";
+    position: absolute;
+    top: -1vw;
+    left: 3%;
+    width: 95%;
+    height: 40%;
+    background-color: #1a1a1a;
+    transition: 0.5s;
+    transform-origin: center;
+  }
+  
+  .registButton::before {
+    content: "";
+    transform-origin: center;
+    position: absolute;
+    top: 80%;
+    left: 3%;
+    width: 95%;
+    height: 40%;
+    background-color: #1a1a1a;
+    transition: 0.5s;
+  }
+  
+  .registButton:hover::before, button:hover::after {
+    transform: scale(0)
+  }
+  
+  .registButton:hover {
+    box-shadow: inset 0px 0px 2.5vw #ffcaa6;
+  }
+
+.orOne{
+    margin-top: 0.8vw;
+    font-size: 2.1vw;
+}
+.link{
+    color: #1479EA;
+}
+
+.link:hover{
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 770px){
+  .bacReg{
+    background-color: #ffcaa6;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-family: Roboto;
+    border: 1px #000 
+}
+
+.form{
+
+    width: 50vw;
+    height: 65vw;
+    background-color: #1a1a1a;
+    border-radius: 2vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0.3vw 0.3vw 1vw rgba(0,0,0,1),
+    -0.1vw -0.1vw  0.6vw  rgba(255, 255, 255, 0.5);
+}
+
+.topText{
+    margin-top: 4vw;
+    font-size: 5.1vw;
+}
+
+.containerReg {
+    margin-top: 3vw;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vw;
+    position: relative;
+    color: white;
+  }
+  
+  .containerReg .labelReg {
+    font-size: 2.6vw;
+    padding-left: 0.9vw;
+    position: absolute;
+    top: 1.7vw;
+    transition: 0.3s;
+    pointer-events: none;
+  }
+  
+  .inputReg {
+    width: 34vw;
+    height: 6.8vw;
+    border: none;
+    outline: none;
+    padding-left: 0.8vw;
+    border-radius: 0.8vw;
+    color: #fff;
+    font-size: 3.2vw;
+    background-color: transparent;
+    box-shadow: 0.3vw 0.3vw 1vw rgba(0,0,0,1),
+    -0.1vw -0.1vw 0.6vw rgba(255, 255, 255, 0.4);
+  }
+  
+  .inputReg:focus {
+    border: 2px solid transparent;
+    color: #fff;
+    box-shadow: 0.3vw 0.3vw 1vw rgba(0,0,0,1),
+    -0.1vw -0.1vw 0.6vw rgba(255, 255, 255, 0.4),
+    inset 0.3vw 0.3vw 1vw rgba(0,0,0,1),
+    inset -0.1vw -0.1vw 0.6vw rgba(255, 255, 255, 0.4);
+  }
+  
+  .containerReg .inputReg:valid ~ .labelReg,
+  .containerReg .inputReg:focus ~ .labelReg {
+    transition: 0.3s;
+    padding-left: 0.2vw;
+    transform: translateY(-5.5vw);
+  }
+  
+  .containerReg .inputReg:valid,
+  .containerReg .inputReg:focus {
+    box-shadow: 0.3vw 0.3vw 1vw rgba(0,0,0,1),
+    -0.1vw -0.1vw 0.6vw rgba(255, 255, 255, 0.4),
+    inset 0.3vw 0.3vw 1vw rgba(0,0,0,1),
+    inset -0.1vw -0.1vw 0.6vw rgba(255, 255, 255, 0.4);
+  }
+
+  .registButton {
+    margin-top: 5vw;
+    width: 36vw;
+    position: relative;
+    height: 8vw;
+    border: 0.2vw ridge #ffcaa6;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    transition: 1s;
+    border-radius: 1.3vw;
+    font-size: 4vw;
+  }
+  
+  .registButton::after {
+    content: "";
+    position: absolute;
+    top: -1vw;
+    left: 3%;
+    width: 95%;
+    height: 40%;
+    background-color: #1a1a1a;
+    transition: 0.5s;
+    transform-origin: center;
+  }
+  
+  .registButton::before {
+    content: "";
+    transform-origin: center;
+    position: absolute;
+    top: 80%;
+    left: 3%;
+    width: 95%;
+    height: 40%;
+    background-color: #1a1a1a;
+    transition: 0.5s;
+  }
+  
+  .registButton:hover::before, button:hover::after {
+    transform: scale(0)
+  }
+  
+  .registButton:hover {
+    box-shadow: inset 0px 0px 2.5vw #ffcaa6;
+  }
+
+.orOne{
+    margin-top: 1.8vw;
+    font-size: 2.1vw;
+}
+.link{
+    color: #ffcaa6;
+}
+
+.link:hover{
+    text-decoration: underline;
+}
+}
